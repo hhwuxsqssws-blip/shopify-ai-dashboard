@@ -1,0 +1,57 @@
+Dirtiness catalog (why this data is messy):
+- missing_value_placeholder: Missing values represented by blanks or placeholders like N/A, NULL, -.
+- leading_trailing_whitespace: Values padded with extra spaces or tabs.
+- inconsistent_case: Mixed upper/lower/title case in text fields.
+- inconsistent_order_id_format: Order IDs use multiple formats (#123, ORD-123, 00123, etc.).
+- mixed_date_formats: Dates appear in multiple formats with/without time.
+- outlier_date: Dates far in the past or future.
+- invalid_date_token: Dates replaced by words like today/yesterday or N/A.
+- currency_symbol_or_text: Prices include currency symbols or text (USD, $).
+- decimal_separator_variation: Decimal/thousands separators vary (1 234,56).
+- negative_or_parentheses_price: Negative/adjustment prices shown with parentheses.
+- quantity_non_numeric: Quantity stored as text or mixed units.
+- quantity_range_string: Quantity stored as a range like 2-3.
+- email_invalid_format: Email is missing @ or uses ' at ' or broken values.
+- phone_inconsistent_format: Phone numbers use inconsistent formatting or missing separators.
+- address_multiline_or_missing_punctuation: Addresses include newlines or missing commas.
+- product_name_typo_or_variant: Product names include typos or variants.
+- product_unknown: Product name does not exist in catalog.
+- country_region_mixed: Country mixed with region/state in same field.
+- tags_mixed_delimiters: Tags use mixed delimiters (comma, semicolon, pipe, slash).
+- tax_or_discount_percent_string: Tax/discount sometimes stored as a percent string.
+- shipping_cost_free_string: Shipping cost stored as FREE text.
+- swapped_fields: Two fields swapped by mistake.
+- total_price_mismatch: Total price does not match components or quantity.
+- duplicate_order_id_conflict: Duplicate Order ID with conflicting values.
+- header_row_inside_data: Header-like row appears inside data.
+- merged_columns_duplicates: Extra near-duplicate columns from merges.
+- inconsistent_currency: Currency code inconsistent or missing.
+
+Applied counts in this run:
+- address_multiline_or_missing_punctuation: 99 rows
+- country_region_mixed: 114 rows
+- currency_symbol_or_text: 264 rows
+- decimal_separator_variation: 210 rows
+- duplicate_order_id_conflict: 10 rows
+- email_invalid_format: 87 rows
+- header_row_inside_data: 8 rows
+- inconsistent_case: 74 rows
+- inconsistent_currency: 157 rows
+- inconsistent_order_id_format: 267 rows
+- invalid_date_token: 17 rows
+- leading_trailing_whitespace: 309 rows
+- merged_columns_duplicates: 310 rows
+- missing_value_placeholder: 180 rows
+- mixed_date_formats: 171 rows
+- negative_or_parentheses_price: 89 rows
+- outlier_date: 12 rows
+- phone_inconsistent_format: 74 rows
+- product_name_typo_or_variant: 50 rows
+- product_unknown: 18 rows
+- quantity_non_numeric: 250 rows
+- quantity_range_string: 58 rows
+- shipping_cost_free_string: 38 rows
+- swapped_fields: 11 rows
+- tags_mixed_delimiters: 157 rows
+- tax_or_discount_percent_string: 63 rows
+- total_price_mismatch: 19 rows

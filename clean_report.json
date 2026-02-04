@@ -1,0 +1,115 @@
+{
+  "generated_at": "2026-01-27T13:12:22.755009Z",
+  "column_mapping": {
+    "Order ID": "order_id",
+    "Order Date": "order_date",
+    "Customer Name": "customer_name",
+    "Customer ID": "customer_id",
+    "Email": "email",
+    "Phone": "phone",
+    "Address": "address",
+    "Product": "product",
+    "Quantity": "quantity",
+    "Unit Price": "unit_price",
+    "Discount": "discount",
+    "Tax": "tax",
+    "Shipping Cost": "shipping_cost",
+    "Total Price": "total_price",
+    "Currency": "currency",
+    "Payment Status": "payment_status",
+    "Fulfillment Status": "fulfillment_status",
+    "Shipping Country": "shipping_country",
+    "Shipping Method": "shipping_method",
+    "Order Tags": "order_tags",
+    "Notes": "notes",
+    "OrderId": "orderid",
+    "OrderDate": "orderdate"
+  },
+  "nulls_normalized": {
+    "order_id": 6,
+    "order_date": 11,
+    "customer_name": 2,
+    "customer_id": 8,
+    "email": 8,
+    "phone": 15,
+    "address": 21,
+    "product": 0,
+    "quantity": 0,
+    "unit_price": 0,
+    "discount": 0,
+    "tax": 0,
+    "shipping_cost": 0,
+    "total_price": 0,
+    "currency": 9,
+    "payment_status": 0,
+    "fulfillment_status": 0,
+    "shipping_country": 0,
+    "shipping_method": 0,
+    "order_tags": 4,
+    "notes": 15,
+    "orderid": 1,
+    "orderdate": 4
+  },
+  "trimmed_values": {
+    "order_id": 84,
+    "order_date": 48,
+    "customer_name": 48,
+    "customer_id": 52,
+    "email": 44,
+    "phone": 40,
+    "address": 217,
+    "product": 63,
+    "quantity": 54,
+    "unit_price": 60,
+    "discount": 56,
+    "tax": 55,
+    "shipping_cost": 51,
+    "total_price": 58,
+    "currency": 37,
+    "payment_status": 63,
+    "fulfillment_status": 55,
+    "shipping_country": 56,
+    "shipping_method": 66,
+    "order_tags": 47,
+    "notes": 34,
+    "orderid": 25,
+    "orderdate": 10
+  },
+  "numeric_parsed": {
+    "quantity": 302,
+    "unit_price": 291,
+    "discount": 286,
+    "tax": 283,
+    "shipping_cost": 255,
+    "total_price": 289
+  },
+  "ranges_normalized": {
+    "quantity": 58,
+    "total_price": 3
+  },
+  "dates_parsed": {
+    "order_date": 259,
+    "orderdate": 63
+  },
+  "emails_normalized": {
+    "email": 35
+  },
+  "phones_normalized": {
+    "phone": 241
+  },
+  "codes_normalized": {
+    "currency": 63
+  },
+  "names_normalized": {
+    "customer_name": 6
+  },
+  "tags_normalized": {
+    "order_tags": 133
+  },
+  "status_normalized": {
+    "payment_status": 278,
+    "fulfillment_status": 71
+  },
+  "merged_columns": [],
+  "duplicate_rows_removed": 6
+}
